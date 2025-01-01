@@ -8,8 +8,8 @@ from colorama import init, Fore, Style
 init(autoreset=True)
 
 # ASCII Art Banner
-banner = pyfiglet.figlet_format("Insta Brute Force", font="slant")
-print(Fore.BLUE + banner + Style.RESET_ALL)
+banner = pyfiglet.figlet_format("Instagram Brute Force Tool", font="slant")
+print(Fore.RED + banner + Style.RESET_ALL)
 
 # Get username and password list path from user
 username = input(Fore.GREEN + "Enter Instagram username: " + Style.RESET_ALL)
@@ -45,4 +45,4 @@ for password in passwords:
 # Print attack completion message
 print(Fore.YELLOW + "Attack complete." + Style.RESET_ALL)
 print(Fore.CYAN + f"Time taken: {time.time() - start_time} seconds" + Style.RESET_ALL)
-  
+
